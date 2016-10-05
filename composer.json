@@ -1,0 +1,21 @@
+{
+	"name" : "gs2/gs2-php-sdk-inbox",
+	"license" : "Apache-2.0",
+	"require" : {
+		"gs2/gs2-php-sdk-core" : "dev-master"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+            "url": "http://git.gs2.io/gitbucket/git/gs2/gs2-php-sdk-core.git"
+		}
+	],
+	"config": {
+        "secure-http": false
+	},
+	"autoload" : {
+		"psr-4" : {
+			"GS2\\Inbox\\" : "src"
+		}
+	}
+}
